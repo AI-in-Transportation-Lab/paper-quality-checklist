@@ -1,31 +1,59 @@
 # Paper Quality Checklist
 
-## Writing and Structure
-1. Check, double-check, and triple-check all acronyms.
-2. Maintain consistency throughout the entire document in terminology, formatting, writing style, and notation.
-3. Keep each paragraph within approximately 200 to 250 words.
-4. Follow the required document formatting guidelines carefully.
-5. Conclusions should be written at a broad level without excessive discussion of coefficients, cluster IDs, or highly specific statistical details.
+Compact submission checks for AIT Lab papers before journal, conference, or workshop submission.
 
-## Figures, Tables, and Equations
-6. Verify all figure and table numbering.
-7. Ensure every figure and table is referenced and discussed within the text.
-8. Search every figure and table number manually to confirm correct cross-referencing.
-9. Use “Figure” and “Table” in cross-references. Do not use “Fig.” or “Tab.”
-10. Ensure all equations are numbered properly.
-11. Check that figure fonts are large enough to remain readable in the final PDF.
-12. If 12 pt font appears crowded in large tables, reduce table font size to 10 pt for readability.
+Use this repository as a final review workflow, not as a writing handbook. Each item should be answered directly in the manuscript, cover letter, supplement, code repository, or response plan.
 
-## References and Citations
-13. Recheck all Zotero references carefully.
-14. Verify Harvard-style citations throughout the document (e.g., Author et al. (2025) or (Author et al., 2025)).
-15. Check every reference individually to confirm it is accurate, complete, and not hallucinated.
+## Quick Start
 
-## PDF and Final Review
-16. Generate the final PDF and search the document for the term “error” to identify potential cross-reference or compilation issues.
-17. Carefully review the final PDF for formatting inconsistencies, broken references, misplaced figures/tables, and alignment issues.
+1. Run the [Universal Checklist](docs/universal-checklist.md).
+2. Select the closest venue family in [Venue Checklists](docs/venue-checklists.md).
+3. Run the [Statistical Test Checklist](docs/statistical-test-checklist.md) if the paper reports empirical, experimental, simulation, survey, crash, model-comparison, or ML results.
+4. Finish with the [Final Submission Gate](docs/final-submission-gate.md).
 
-## Originality and AI Usage
-18. Run the final PDF through Turnitin and generate a plagiarism report.
-19. If the similarity score exceeds 10%, consult with the professor before submission.
-20. Use AI tools carefully and responsibly during writing, editing, and proofreading.
+## Quick Submission Gate
+
+- [ ] The target venue is named correctly and the paper fits its scope.
+- [ ] The contribution can be stated in one precise sentence.
+- [ ] Every major claim is supported by a result, citation, proof, or limitation.
+- [ ] The method, data, and evaluation choices match the research question.
+- [ ] Figures, tables, equations, citations, and references are complete and cross-referenced.
+- [ ] Statistical tests, model choices, uncertainty, and effect sizes are reported where needed.
+- [ ] Reproducibility status is clear: data, code, prompts, environment, seeds, and restrictions.
+- [ ] Ethics, privacy, safety, AI use, and conflicts of interest are handled according to the venue.
+- [ ] The final PDF was compiled from the submission source and manually reviewed.
+
+## Universal Paper Quality Checklist
+
+- [ ] Title states the topic and contribution without overclaiming.
+- [ ] Abstract includes problem, gap, method, data, main result, and implication.
+- [ ] Introduction separates motivation, research gap, contribution, and paper organization.
+- [ ] Literature review explains what prior work cannot answer, not only what it did.
+- [ ] Methods are specific enough for a skilled reader to reproduce or audit.
+- [ ] Results answer the stated research questions in the same order they are introduced.
+- [ ] Discussion connects findings to transportation, computing, policy, safety, or engineering practice.
+- [ ] Limitations distinguish data limits, model limits, causal limits, and external validity limits.
+- [ ] Conclusion stays broad and does not repeat detailed coefficients or table values.
+
+## Venue Family Selector
+
+- Transportation engineering: use when the contribution is a transportation, safety, operations, planning, infrastructure, mobility, ITS, or policy contribution.
+- ACM computing: use when the contribution is primarily computing, systems, HCI, data mining, retrieval, networking, or software/method artifact quality.
+- Major CS/AI conferences: use when the contribution is primarily ML, AI, vision, NLP, data mining, or algorithmic evaluation.
+- Mixed AI-in-transportation papers: satisfy both the transportation relevance checks and the CS/AI evidence checks.
+
+## Final 24-Hour Checks
+
+- [ ] Search the final PDF for `error`, `??`, `undefined`, missing references, and broken citations.
+- [ ] Search every figure, table, algorithm, appendix, and equation number in the text.
+- [ ] Check that every acronym is defined once and used consistently.
+- [ ] Open the PDF on another machine or viewer and inspect fonts, margins, captions, and equations.
+- [ ] Confirm author names, affiliations, acknowledgments, funding, and conflicts of interest.
+- [ ] Confirm the submitted files match the final internal version.
+
+## Repository Map
+
+- [Universal checklist](docs/universal-checklist.md)
+- [Venue-family checklists](docs/venue-checklists.md)
+- [Statistical test checklist](docs/statistical-test-checklist.md)
+- [Final submission gate](docs/final-submission-gate.md)
