@@ -72,6 +72,23 @@ Journal and venue finder tools:
 - [ACM Digital Library publications](https://www.acm.org/publications): browse ACM journals, proceedings, magazines, and publication policies.
 - [Directory of Open Access Journals](https://doaj.org/): check fully open-access journals outside publisher-specific tools.
 
+Special issue finder tools:
+
+- [ScienceDirect Calls for Papers](https://www.sciencedirect.com/browse/calls-for-papers): browse Elsevier special issues and article collections with open calls.
+- [Springer Nature Article Collections](https://www.springernature.com/gp/authors/publish-an-article/collections): find Springer Nature collections, topical collections, and special issues.
+- [Wiley Special Issues](https://www.wiley.com/publish/special-issues): browse and submit to Wiley special issues.
+- [IEEE Calls for Papers](https://www.computer.org/publications/author-resources/calls-for-papers): check IEEE Computer Society journal and magazine calls.
+- [Sage Journal Recommender](https://journal-recommender.sagepub.com/): identify Sage journals, then check journal pages for active special issues.
+- [Taylor & Francis Online](https://www.tandfonline.com/): search the target journal page for special issue, collection, and call-for-paper notices.
+
+Special issue checks:
+
+- [ ] The special issue is hosted on the official publisher or journal website.
+- [ ] Guest editors, scope, article type, deadline, review process, and APC policy are clear.
+- [ ] The topic fits the manuscript naturally; do not force a paper into a special issue only because the deadline is convenient.
+- [ ] The special issue still uses normal peer review and does not promise unusually fast acceptance.
+- [ ] TXST open-access coverage is checked before selecting an optional open-access route.
+
 | Your paper | Target venues |
 |---|---|
 | Crash model, severity, safety countermeasure | AA&P, AMAR, TRR, TR-C |
