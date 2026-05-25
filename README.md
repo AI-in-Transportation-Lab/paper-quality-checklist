@@ -1,5 +1,7 @@
 # Paper Quality Checklist
 
+![Paper Quality Checklist banner](assets/paper-quality-checklist-banner.png)
+
 Pre-submission review workflow for AIT Lab. Run in order; each step links to the detailed doc.
 
 ---
