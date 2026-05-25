@@ -40,8 +40,11 @@ Run this page after all writing, analysis, formatting, and coauthor review are c
 
 ## Statistics, Data, and Reproducibility
 
-- [ ] Statistical tests and models match the data structure.
-- [ ] Assumptions, diagnostics, effect sizes, and uncertainty are reported.
+- [ ] Statistical tests and models match the data structure — verified against [statistical-test-checklist.md](statistical-test-checklist.md).
+- [ ] Assumptions, diagnostics, effect sizes, and confidence intervals are reported.
+- [ ] Multiple comparison correction applied if more than one hypothesis is tested.
+- [ ] ML model selection and validation follow [ml-model-selection.md](ml-model-selection.md): correct split, metrics, seeds, and baselines.
+- [ ] Causal language (*causes*, *effect*, *reduces*) checked against [causal-inference.md](causal-inference.md): design supports the claim.
 - [ ] Data source, preprocessing, exclusions, and missing data are documented.
 - [ ] Code, data, prompts, models, seeds, environment, and restrictions are stated.
 - [ ] Tables and figures can be regenerated from the final analysis workflow.

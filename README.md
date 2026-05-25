@@ -1,59 +1,124 @@
 # Paper Quality Checklist
 
-Compact submission checks for AIT Lab papers before journal, conference, or workshop submission.
+Pre-submission review workflow for AIT Lab. Run in order; each step links to the detailed doc.
 
-Use this repository as a final review workflow, not as a writing handbook. Each item should be answered directly in the manuscript, cover letter, supplement, code repository, or response plan.
+---
 
-## Quick Start
+## Workflow
 
-1. Run the [Universal Checklist](docs/universal-checklist.md).
-2. Select the closest venue family in [Venue Checklists](docs/venue-checklists.md).
-3. Run the [Statistical Test Checklist](docs/statistical-test-checklist.md) if the paper reports empirical, experimental, simulation, survey, crash, model-comparison, or ML results.
-4. Finish with the [Final Submission Gate](docs/final-submission-gate.md).
+```
+Step 1  ->  Universal Checklist      (every paper)
+Step 2  ->  Venue Checklist          (pick your venue)
+Step 3  ->  Statistical Checklist    (any paper with data, models, or experiments)
+Step 4  ->  ML Model Selection       (if proposing or comparing ML/DL models)
+Step 5  ->  Causal Inference         (if claiming a causal effect or guiding policy)
+Step 6  ->  Final Submission Gate    (24 h before submit)
+```
 
-## Quick Submission Gate
+---
 
-- [ ] The target venue is named correctly and the paper fits its scope.
-- [ ] The contribution can be stated in one precise sentence.
-- [ ] Every major claim is supported by a result, citation, proof, or limitation.
-- [ ] The method, data, and evaluation choices match the research question.
-- [ ] Figures, tables, equations, citations, and references are complete and cross-referenced.
-- [ ] Statistical tests, model choices, uncertainty, and effect sizes are reported where needed.
-- [ ] Reproducibility status is clear: data, code, prompts, environment, seeds, and restrictions.
-- [ ] Ethics, privacy, safety, AI use, and conflicts of interest are handled according to the venue.
-- [ ] The final PDF was compiled from the submission source and manually reviewed.
+## TXST Open Access APC Note
 
-## Universal Paper Quality Checklist
+Before choosing a paid open-access option, check the [TXST University Libraries open publishing agreements FAQ](https://askalibrarian.library.txstate.edu/faq/371997). TXST has negotiated open-access publishing agreements and discounts; eligible corresponding authors may have APCs covered or reduced for covered publishers and journals.
 
-- [ ] Title states the topic and contribution without overclaiming.
-- [ ] Abstract includes problem, gap, method, data, main result, and implication.
-- [ ] Introduction separates motivation, research gap, contribution, and paper organization.
-- [ ] Literature review explains what prior work cannot answer, not only what it did.
-- [ ] Methods are specific enough for a skilled reader to reproduce or audit.
-- [ ] Results answer the stated research questions in the same order they are introduced.
-- [ ] Discussion connects findings to transportation, computing, policy, safety, or engineering practice.
-- [ ] Limitations distinguish data limits, model limits, causal limits, and external validity limits.
-- [ ] Conclusion stays broad and does not repeat detailed coefficients or table values.
+Important checks:
 
-## Venue Family Selector
+- [ ] Use the TXST institutional email and affiliation for the corresponding author when the publisher workflow asks for eligibility.
+- [ ] Confirm the current agreement, article type, license, and journal coverage before submission; publisher agreements can change.
+- [ ] For ACM venues, check ACM Open eligibility. ACM states that corresponding authors from participating institutions can publish eligible articles open access in ACM journals, proceedings, and magazines at no cost to the authors.
+- [ ] Do not pay an APC until the library or publisher workflow confirms whether the article is covered.
 
-- Transportation engineering: use when the contribution is a transportation, safety, operations, planning, infrastructure, mobility, ITS, or policy contribution.
-- ACM computing: use when the contribution is primarily computing, systems, HCI, data mining, retrieval, networking, or software/method artifact quality.
-- Major CS/AI conferences: use when the contribution is primarily ML, AI, vision, NLP, data mining, or algorithmic evaluation.
-- Mixed AI-in-transportation papers: satisfy both the transportation relevance checks and the CS/AI evidence checks.
+Relevant TXST-covered Springer Nature titles to consider for AIT Lab work:
 
-## Final 24-Hour Checks
+| Area | Journal |
+|---|---|
+| Computer vision / multimodal systems | [Machine Vision and Applications](https://link.springer.com/journal/138) |
+| AI and society | [AI & SOCIETY](https://link.springer.com/journal/146) |
+| Neural computing | [Neural Computing and Applications](https://link.springer.com/journal/521) |
+| Human factors / work systems | [Cognition, Technology & Work](https://link.springer.com/journal/10111) |
+| Knowledge systems | [Knowledge and Information Systems](https://link.springer.com/journal/10115) |
+| AI theory / methods | [Annals of Mathematics and Artificial Intelligence](https://link.springer.com/journal/10472) |
+| Applied AI | [Applied Intelligence](https://link.springer.com/journal/10489) |
+| AI governance / law | [Artificial Intelligence and Law](https://link.springer.com/journal/10506) |
+| Data mining | [Data Mining and Knowledge Discovery](https://link.springer.com/journal/10618) |
+| Machine learning | [Machine Learning](https://link.springer.com/journal/10994) |
+| Transportation | [Transportation](https://link.springer.com/journal/11116) |
+| User modeling | [User Modeling and User-Adapted Interaction](https://link.springer.com/journal/11257) |
+| Computer vision | [International Journal of Computer Vision](https://link.springer.com/journal/11263) |
+| Multimodal interfaces | [Journal on Multimodal User Interfaces](https://link.springer.com/journal/12193) |
+| Transportation security | [Journal of Transportation Security](https://link.springer.com/journal/12198) |
+| Public transport | [Public Transport](https://link.springer.com/journal/12469) |
+| Intelligent transportation | [International Journal of Intelligent Transportation Systems Research](https://link.springer.com/journal/13177) |
+| AI methods | [Progress in Artificial Intelligence](https://link.springer.com/journal/13748) |
+| Infrastructure / geotechnology | [Transportation Infrastructure Geotechnology](https://link.springer.com/journal/40515) |
+| AI education | [International Journal of Artificial Intelligence in Education](https://link.springer.com/journal/40593) |
+| Data science | [Annals of Data Science](https://link.springer.com/journal/40745) |
+| Developing economies | [Transportation in Developing Economies](https://link.springer.com/journal/40890) |
+| Transportation data science | [Data Science for Transportation](https://link.springer.com/journal/42421) |
+| Human-AI systems | [Human-Intelligent Systems Integration](https://link.springer.com/journal/42454) |
+| AI ethics | [AI and Ethics](https://link.springer.com/journal/43681) |
 
-- [ ] Search the final PDF for `error`, `??`, `undefined`, missing references, and broken citations.
-- [ ] Search every figure, table, algorithm, appendix, and equation number in the text.
-- [ ] Check that every acronym is defined once and used consistently.
-- [ ] Open the PDF on another machine or viewer and inspect fonts, margins, captions, and equations.
-- [ ] Confirm author names, affiliations, acknowledgments, funding, and conflicts of interest.
-- [ ] Confirm the submitted files match the final internal version.
+---
+
+## Venue Quick Selector
+
+Journal and venue finder tools:
+
+- [Elsevier Journal Finder](https://journalfinder.elsevier.com/): match title, abstract, keywords, and field to Elsevier journals.
+- [Springer Nature Journal Suggester](https://www.springer.com/gp/authors-editors/selecting-a-journal/1258): search Springer Nature journals and filter by scope and publishing model.
+- [Wiley Journal Finder](https://www.wiley.com/en-gb/publish/journal-finder): search and compare Wiley journals.
+- [IEEE Publication Recommender](https://publication-recommender.ieee.org/periodicals): find IEEE periodicals by keywords or abstract.
+- [Sage Journal Recommender](https://journal-recommender.sagepub.com/): match a manuscript to Sage journals.
+- [ACM Digital Library publications](https://www.acm.org/publications): browse ACM journals, proceedings, magazines, and publication policies.
+- [Directory of Open Access Journals](https://doaj.org/): check fully open-access journals outside publisher-specific tools.
+
+| Your paper | Target venues |
+|---|---|
+| Crash model, severity, safety countermeasure | AA&P, AMAR, TRR, TR-C |
+| ITS, AV, traffic operations, ML in transportation | TR-C, IEEE T-ITS, ITSC, IV |
+| Travel demand, network optimization, behavioral model | TR-B, Transportation Science |
+| Environmental impact, emissions, energy | TR-D |
+| Spatial data, mobility, trajectory, urban computing | ACM SIGSPATIAL, KDD |
+| ML method, deep learning, representation learning | NeurIPS, ICLR, ICML |
+| Broad AI: planning, reasoning, multiagent | AAAI, IJCAI |
+| Computer vision, perception, AV sensing | CVPR, ICCV, ECCV |
+| Robot learning, AV policy, sim-to-real | CoRL |
+| NLP for transportation, report analysis | ACL, EMNLP |
+| HCI, mobility apps, user studies | ACM CHI |
+
+---
 
 ## Repository Map
 
-- [Universal checklist](docs/universal-checklist.md)
-- [Venue-family checklists](docs/venue-checklists.md)
-- [Statistical test checklist](docs/statistical-test-checklist.md)
-- [Final submission gate](docs/final-submission-gate.md)
+| File | Purpose |
+|---|---|
+| [docs/universal-checklist.md](docs/universal-checklist.md) | Every paper, every venue |
+| [docs/venue-checklists.md](docs/venue-checklists.md) | TR-B/C/D, AA&P, T-ITS, TRR, SIGSPATIAL, KDD, NeurIPS, ICLR, ICML, AAAI, CVPR, CoRL, ACL |
+| [docs/statistical-test-checklist.md](docs/statistical-test-checklist.md) | Test selection, formulas ($H_0/H_1$), assumptions, effect sizes, ML comparison tests |
+| [docs/ml-model-selection.md](docs/ml-model-selection.md) | Model choice, validation protocol, metrics, ablation, common failures |
+| [docs/causal-inference.md](docs/causal-inference.md) | DAGs, DiD, IV, RDD, matching, sensitivity analysis |
+| [docs/final-submission-gate.md](docs/final-submission-gate.md) | Final 24-hour pre-submission gate |
+
+---
+
+## Agents
+
+Use these prompts with any LLM (ChatGPT, Claude, Gemini) to automate parts of the review. Paste the system prompt, then paste the relevant section of your manuscript.
+
+| Prompt | Input | Output |
+|---|---|---|
+| [agents/full-paper-review.md](agents/full-paper-review.md) | Abstract + Methods + Results | Section-by-section issue list (CRITICAL / MAJOR / MINOR) |
+| [agents/statistical-audit.md](agents/statistical-audit.md) | Methods (stats) + Results + Tables | Statistical validity report with fix suggestions |
+| [agents/venue-fit.md](agents/venue-fit.md) | Abstract + contribution sentence | Top 3 venue recommendations with scores and rejection risks |
+
+---
+
+## Quick Submission Gate
+
+- [ ] Venue name, track, and submission deadline are correct.
+- [ ] Contribution fits venue scope and can be stated in one precise sentence.
+- [ ] Every major claim has a result, citation, proof, or stated limitation.
+- [ ] Statistics: correct test chosen, assumptions checked, effect size and CI reported.
+- [ ] Reproducibility: data, code, seeds, environment, and access restrictions stated.
+- [ ] Ethics, AI-use disclosure, conflicts of interest, and funding handled per venue policy.
+- [ ] Final PDF compiled from clean source, searched for errors, and manually inspected page by page.
