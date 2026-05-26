@@ -80,8 +80,6 @@ Special issue finder tools:
 - [Springer Nature Article Collections](https://www.springernature.com/gp/authors/publish-an-article/collections): find Springer Nature collections, topical collections, and special issues.
 - [Wiley Special Issues](https://www.wiley.com/publish/special-issues): browse and submit to Wiley special issues.
 - [IEEE Calls for Papers](https://www.computer.org/publications/author-resources/calls-for-papers): check IEEE Computer Society journal and magazine calls.
-- [Sage Journal Recommender](https://journal-recommender.sagepub.com/): identify Sage journals, then check journal pages for active special issues.
-- [Taylor & Francis Online](https://www.tandfonline.com/): search the target journal page for special issue, collection, and call-for-paper notices.
 
 Special issue checks:
 
